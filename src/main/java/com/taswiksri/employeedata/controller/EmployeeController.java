@@ -1,7 +1,9 @@
 package com.taswiksri.employeedata.controller;
 
 import com.taswiksri.employeedata.db.entity.EmployeeEntity;
+import com.taswiksri.employeedata.dto.Employee;
 import com.taswiksri.employeedata.service.EmployeeService;
+import io.swagger.models.Response;
 import jakarta.websocket.server.PathParam;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -10,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/taswiksri")
 @RequiredArgsConstructor
-@CrossOrigin
+@CrossOrigin(value = "*",allowedHeaders = {})
 public class EmployeeController {
 
     private final EmployeeService employeeService;
@@ -34,10 +36,9 @@ public class EmployeeController {
 
     }
 
-    @GetMapping("/save")
-    @ResponseBody
-    public String saveEmployee(){
-        employeeService.save();
-        return "OK";
+    @PostMapping("/employee")
+    public ResponseEntity<String> saveEmployee(@RequestBody Employee employee){
+        employeeService.save(employee);
+        return ResponseEntity.ok("OK");
     }
 }
