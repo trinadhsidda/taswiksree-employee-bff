@@ -14,7 +14,7 @@ public class EmployeeEntity {
 
     @Id
     @Column(name = "ID")
-    @SequenceGenerator(name="EMPLOYEE_SEQUENCE_GENERATOR", sequenceName="EMPLOYEE_SEQUENCE", initialValue=12,allocationSize=1)
+    @SequenceGenerator(name="EMPLOYEE_SEQUENCE_GENERATOR", sequenceName="EMPLOYEE_SEQUENCE", initialValue=2,allocationSize=1)
     @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="EMPLOYEE_SEQUENCE_GENERATOR")
     private Long id;
 

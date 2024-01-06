@@ -35,10 +35,14 @@ public class EmployeeService {
 
         log.info("Employee to be saved: {}",employee);
         EmployeeEntity employeeEntity = new EmployeeEntity();
-        /*employeeEntity.setId(12L);*/
+        employeeEntity.setId(employee.getId());
         employeeEntity.setFirstName(employee.getFirstName());
         employeeEntity.setLastName(employee.getLastName());
         employeeEntity.setEmail(employee.getEmail());
         employeeRepository.save(employeeEntity);
+    }
+
+    public void delete(Long id){
+        employeeRepository.deleteById(id);
     }
 }
