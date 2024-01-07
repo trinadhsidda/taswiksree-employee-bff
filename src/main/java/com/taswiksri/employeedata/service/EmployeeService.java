@@ -22,14 +22,27 @@ public class EmployeeService {
     @Value("${page.size:100}")
     private int pageSize;
 
+    /**
+     * This method gets the employee by ID
+     * @param id - Employee ID
+     * @return
+     */
     public EmployeeEntity getEmployee(Long id){
         return employeeRepository.findById(id).orElseGet(() -> new EmployeeEntity());
     }
 
+    /**
+     * This method returns all employee details by Page
+     * @return
+     */
     public Page<EmployeeEntity> getAllEmployees(){
         return employeeRepository.findAll(Pageable.ofSize(pageSize));
     }
 
+    /**
+     * This method saves the Employee data
+     * @param employee
+     */
     @Transactional
     public void save(Employee employee) {
 
@@ -42,6 +55,10 @@ public class EmployeeService {
         employeeRepository.save(employeeEntity);
     }
 
+    /**
+     * This service delets the Employee data by ID
+     * @param id - Employee ID
+     */
     public void delete(Long id){
         employeeRepository.deleteById(id);
     }

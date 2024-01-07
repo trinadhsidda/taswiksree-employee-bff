@@ -16,6 +16,11 @@ import org.springframework.web.bind.annotation.*;
 public class EmployeeController {
 
     private final EmployeeService employeeService;
+
+    /**
+     * Health end point to indicate the application's health
+     * @return
+     */
     @GetMapping("/health")
     public ResponseEntity<String> healthCheck(){
 
@@ -23,6 +28,11 @@ public class EmployeeController {
 
     }
 
+    /**
+     * This GET mapping identifies the employee by ID
+     * @param id - Employee id
+     * @return - EmployeeEntity
+     */
     @GetMapping("/employee/{id}")
     public ResponseEntity<EmployeeEntity> getEmployee(@PathVariable("id") Long id){
 
@@ -30,18 +40,33 @@ public class EmployeeController {
         return ResponseEntity.ok(employee);
     }
 
+    /**
+     * The GET Mapping helps to return employees list
+     *
+     * @return
+     */
     @GetMapping("/employees")
     public ResponseEntity<Object> getAllEmployees(){
         return ResponseEntity.ok(employeeService.getAllEmployees().getContent());
 
     }
 
+    /**
+     * This POST mapping add/update employee object
+     * @param employee
+     * @return
+     */
     @PostMapping("/employee")
     public ResponseEntity<String> saveEmployee(@RequestBody Employee employee){
         employeeService.save(employee);
         return ResponseEntity.ok("OK");
     }
 
+    /**
+     * This Delete mapping deletes an employee by ID
+     * @param id - Employee ID
+     * @return
+     */
     @DeleteMapping("/employee/{id}")
     public ResponseEntity<Void> deleteEmployee(@PathVariable("id") Long id){
         employeeService.delete(id);
