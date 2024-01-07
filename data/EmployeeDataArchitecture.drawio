@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" modified="2024-01-07T19:18:09.554Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15" etag="hC5mO9X7YejY2T-iY-B1" version="22.1.17" type="device">
+  <diagram name="Page-1" id="Dk2KHgYULUcyYcHmjvLT">
+    <mxGraphModel dx="984" dy="644" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="b1o9dPpjGoKEHtd5MocT-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="b1o9dPpjGoKEHtd5MocT-1" target="b1o9dPpjGoKEHtd5MocT-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b1o9dPpjGoKEHtd5MocT-1" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="167.7" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b1o9dPpjGoKEHtd5MocT-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="b1o9dPpjGoKEHtd5MocT-6" target="b1o9dPpjGoKEHtd5MocT-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b1o9dPpjGoKEHtd5MocT-6" value="&lt;b&gt;TaswikSri Employee&amp;nbsp;&lt;br&gt;Data Application&lt;/b&gt;" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.weblogos.chrome" vertex="1" parent="1">
+          <mxGeometry x="220" y="160" width="74.8" height="75.4" as="geometry" />
+        </mxCell>
+        <mxCell id="b1o9dPpjGoKEHtd5MocT-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="b1o9dPpjGoKEHtd5MocT-8" target="b1o9dPpjGoKEHtd5MocT-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b1o9dPpjGoKEHtd5MocT-8" value="React Application&lt;br&gt;at port 3000" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="400" y="100" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="b1o9dPpjGoKEHtd5MocT-9" value="Spring BFF&lt;br&gt;(Backend Application)&lt;br&gt;at port: 8080" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="410" y="270" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b1o9dPpjGoKEHtd5MocT-11" value="&lt;b&gt;H2 Database&lt;/b&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="670" y="248" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="b1o9dPpjGoKEHtd5MocT-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=52.5;entryPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="b1o9dPpjGoKEHtd5MocT-9" target="b1o9dPpjGoKEHtd5MocT-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
